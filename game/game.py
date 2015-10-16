@@ -117,7 +117,7 @@ def exit_leads_to(exits, direction):
     >>> exit_leads_to(rooms["Reception"]["exits"], "east")
     "your personal tutor's office"
     >>> exit_leads_to(rooms["Tutor"]["exits"], "west")
-    "Reception"
+    'Reception'
     """
     #print ('"' + rooms[exits[direction]]["name"] + '"')
 
@@ -247,7 +247,7 @@ def move(exits, direction):
     >>> move(rooms["Reception"]["exits"], "west") == rooms["Office"]
     False
     """
-    print(direction)
+    #print(direction)
     return rooms[exits[direction]]
     
 
